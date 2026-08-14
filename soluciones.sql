@@ -1,1 +1,22 @@
-
+-- ══════════════════════════════════════════
+-- RetailChain — UNION y UNION ALL
+-- Autor: [Tu nombre]
+-- Fecha: [Fecha de entrega]
+-- ══════════════════════════════════════════
+-- ── CONSULTA 1: UNION ────────────────────
+-- Reporte de Catálogo Unificado
+-- Pregunta de negocio: ¿Qué productos únicos comercializa
+-- la empresa en toda su red de sucursales?
+-- Operador: UNION (elimina filas completamente duplicadas)
+-- [Tu consulta aquí]
+-- ── CONSULTA 2: UNION ALL ────────────────
+-- Auditoría de Stock Total
+-- Pregunta de negocio: ¿Cuántos registros físicos de stock
+-- existen en total entre ambas sucursales?
+-- Operador: UNION ALL (mantiene todos los registros incluyendo duplicados)
+-- [Tu consulta aquí]
+-- ── CONSULTA 3: COMPARACIÓN DE RESULTADOS ─
+-- Ejecutá estas dos consultas para comparar cuántas filas
+-- devuelve cada operador y explicá la diferencia en tu README
+SELECT COUNT(*) AS filas_union     FROM (/* tu UNION aquí */)     AS resultado_union;
+SELECT COUNT(*) AS filas_union_all FROM (/* tu UNION ALL aquí */) AS resultado_union_all;
